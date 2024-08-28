@@ -60,7 +60,6 @@ list_of_pages = [
     "Findings"
 ]
 
-st.sidebar.title(':dollar: Mapping MooLAH')
 selection = st.sidebar.radio("Content", list_of_pages)
 
 if selection == "Data Background":
