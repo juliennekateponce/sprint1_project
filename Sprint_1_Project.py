@@ -1,12 +1,14 @@
 import streamlit as st
 import pandas as pd
 
-st.title("Mapping MooLAH")
-st.write("Uncovering Spending Patterns and Customer Segments for Targeted Marketing")
-st.write("Group 5 - Sinigang")
-st.image("slides/1.jpg")
+st.title("Mapping MooLAH :dollar:")
+st.subheader("Uncovering Spending Patterns and Customer Segments for Targeted Marketing")
+st.write("Sprint 1 Project ｜ Group 5 - Sinigang")
 st.image("slides/2.jpg")
+st.image("slides/3.jpg")
 
+st.sidebar.image("slides/icon.png", caption="icon", use_column_width=True)
+st.sidebar.image("slides/mapping_moolah.png", caption="mapping_moolah", use_column_width=True)
 
 def background():
 
@@ -59,7 +61,7 @@ list_of_pages = [
 ]
 
 st.sidebar.title(':dollar: Mapping MooLAH')
-selection = st.sidebar.radio("Go to: ", list_of_pages)
+selection = st.sidebar.radio("Content", list_of_pages)
 
 if selection == "Data Background":
     background()
