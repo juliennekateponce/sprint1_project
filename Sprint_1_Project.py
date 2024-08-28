@@ -4,17 +4,20 @@ import pandas as pd
 st.title("Mapping MooLAH :dollar:")
 st.subheader("Uncovering Spending Patterns and Customer Segments for Targeted Marketing")
 st.write("Sprint 1 Project ｜ Group 5 - Sinigang")
-st.image("slides/2.jpg")
-st.image("slides/3.jpg")
+# st.image("slides/2.jpg")
+# st.image("slides/3.jpg")
 
 st.sidebar.image("slides/icon.png", use_column_width=True)
 st.sidebar.image("slides/mapping_moolah.png", use_column_width=True)
 
+def introduction():
+    st.title("Introduction")
+    st.image("slides/2.jpg")
+    st.image("slides/3.jpg")
+    
 def background():
 
-    # Load photo
     st.title("Data Background")
-    # st.write("Provide a short description of the problem and your objective.")
     st.image("slides/5.jpg")
     st.image("slides/6.jpg")
     st.image("slides/7.jpg")
@@ -53,6 +56,7 @@ def findings():
     
 
 list_of_pages = [
+    "Introduction",
     "Data Background",
     "Data Preprocessing",
     "EDA",
@@ -62,6 +66,9 @@ list_of_pages = [
 
 selection = st.sidebar.radio("Content", list_of_pages)
 
+if selection == "Introduction":
+    introduction()
+    
 if selection == "Data Background":
     background()
 
