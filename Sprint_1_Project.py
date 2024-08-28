@@ -7,8 +7,8 @@ st.write("Sprint 1 Project ｜ Group 5 - Sinigang")
 st.image("slides/2.jpg")
 st.image("slides/3.jpg")
 
-st.sidebar.image("slides/icon.png", caption="icon", use_column_width=True)
-st.sidebar.image("slides/mapping_moolah.png", caption="mapping_moolah", use_column_width=True)
+st.sidebar.image("slides/icon.png", use_column_width=True)
+st.sidebar.image("slides/mapping_moolah.png", use_column_width=True)
 
 def background():
 
